@@ -1,0 +1,40 @@
+directories:
+  output: release
+  buildResources: public
+files:
+  - filter:
+      - build/**/*
+      - dist/**/*
+      - node_modules/**/*
+      - package.json
+extraMetadata:
+  main: build/electron.js
+appId: com.taskflow.app
+productName: TaskFlow
+publish:
+  provider: github
+  owner: luca11promax1
+  repo: taskflow
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+    - target: portable
+      arch:
+        - x64
+  certificateFile: null
+  certificatePassword: <stripped sensitive data>
+  signingHashAlgorithms:
+    - sha256
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: TaskFlow
+  installerIcon: public/icon.png
+  uninstallerIcon: public/icon.png
+  installerHeaderIcon: public/icon.png
+extends: react-cra
+electronVersion: 28.3.3

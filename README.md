@@ -1,4 +1,4 @@
-# NuotoTodo - Task Manager Desktop App
+# TaskFlow - Task Manager Desktop App
 
 Una semplice e intuitiva app di gestione task per Windows con cartelle, priorità, notifiche e auto-aggiornamento.
 

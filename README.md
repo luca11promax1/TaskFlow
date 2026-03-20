@@ -87,32 +87,3 @@ nuototodo/
 └── README.md
 ```
 
-## Build & Release
-
-### Build della app
-```bash
-npm run dist
-```
-
-Genera:
-- Installer NSIS (`.exe`)
-- Portable version (`.exe`)
-
-### Release su GitHub
-
-1. Fai un tag dei rilasci: `v0.1.0`, `v0.2.0`, ecc.
-2. Carica il file `.exe` dell'installer come release asset
-3. L'app controllerà automaticamente i nuovi rilasci su GitHub
-
-## Database
-
-Struttura:
-- **folders**: cartelle utente
-- **tasks**: singole task con riferimento a cartella
-- **config**: configurazioni app
-
-Backup automatico salvato in `%APPDATA%/NuotoTodo/backups/`
-
-## Licenza
-
-MIT
